@@ -2,7 +2,7 @@ ARG VERSION
 
 # --- Base
 
-FROM docker.io/library/python:3.6.9-slim AS base
+FROM docker.io/library/python:3.8-slim AS base
 
 # hadolint ignore=DL3008,DL3042,DL3013
 RUN set -eux \
@@ -83,7 +83,7 @@ ARG VERSION
 # hadolint ignore=DL4006
 RUN set -eux \
   ; git clone \
-    --branch "v$VERSION" \
+    --branch "$VERSION" \
     --single-branch \
     https://github.com/kubernetes-sigs/kubespray.git \
     . \

@@ -1,4 +1,4 @@
-ARG VERSION=v2.19.1
+ARG VERSION=v2.20.0
 
 # --- Base
 
@@ -78,7 +78,7 @@ ENV PATH="/home/kubespray/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/local/b
 
 WORKDIR /opt/kubespray
 
-ARG VERSION=v2.19.1
+ARG VERSION=v2.20.0
 
 # hadolint ignore=DL4006
 RUN set -eux \
